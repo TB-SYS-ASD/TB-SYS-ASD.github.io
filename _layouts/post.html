@@ -90,9 +90,19 @@ sidebar:
       {%- if site.utterances.repo -%}
       {%- include extensions/comments/utterances.html -%}
       {%- endif -%}
-
-      {%- endif -%}
+      
+      <div class="post-comments">
+        <h3 style="margin-bottom: 20px;">💬 发表评论</h3>
+        <div id="cusdis_thread"
+          data-host="https://cusdis.com"
+          data-app-id="2278398e-5432-4809-9b32-a059cdb70f0c"
+          data-page-id="{{ PAGE_ID }}"
+          data-page-url="{{ PAGE_URL }}"
+          data-page-title="{{ PAGE_TITLE }}">
+      </div>
+      <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
     </div>
+
     {%- endif -%}
 
   </section>
